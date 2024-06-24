@@ -1,0 +1,174 @@
+
+Meeting format
+{
+  uuid: '59E1Nhp8TkevkW7ZdS7j8g==',
+  id: 83907339098,
+  host_id: '9qb0lQ4mTXK4AsZKpf4N-g',
+  type: 2,
+  topic: 'Q&A Session',
+  user_name: 'Genesys Learnable',
+  user_email: 'learnable@genesystechhub.com',
+  start_time: '2023-12-21T15:10:17Z',
+  end_time: '2023-12-21T16:31:34Z',
+  duration: 82,
+  total_minutes: 8187,
+  participants_count: 305,
+  tracking_fields: [],
+  dept: 'Learning & Development'
+}
+
+/past_meetings/{meetingId}/participants
+
+Participant format
+{
+  "next_page_token": "Tva2CuIdTgsv8wAnhyAdU3m06Y2HuLQtlh3",
+  "page_count": 1,
+  "page_size": 30,
+  "total_records": 1,
+  "participants": [
+    {
+      "id": "30R7kT7bTIKSNUFEuH_Qlg",
+      "name": "Jill Chill",
+      "user_id": "27423744",
+      "registrant_id": "_f08HhPJS82MIVLuuFaJPg",
+      "user_email": "jchill@example.com",
+      "join_time": "2022-03-23T06:58:09Z",
+      "leave_time": "2022-03-23T07:02:28Z",
+      "duration": 259,
+      "failover": false,
+      "status": "in_meeting"
+    }
+  ]
+}
+
+More on participants
+            {
+              "id": "",
+              "user_id": "16793600",
+            "name": "Precious Enarevba",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:26Z",
+            "leave_time": "2023-12-21T16:31:34Z",
+            "duration": 4868,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16794624",
+            "name": "Uche Ali(W)",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:26Z",
+            "leave_time": "2023-12-21T15:17:37Z",
+            "duration": 431,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16795648",
+            "name": "Prince Ezeodili (B)",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:26Z",
+            "leave_time": "2023-12-21T15:29:48Z",
+            "duration": 1162,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16796672",
+            "name": "Mercy Ani (P)",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:28Z",
+            "leave_time": "2023-12-21T15:11:21Z",
+            "duration": 53,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16797696",
+            "name": "David Nwatu (B)",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:28Z",
+            "leave_time": "2023-12-21T15:11:20Z",
+            "duration": 52,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16798720",
+            "name": "Chinaecherem Obi (F)",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:30Z",
+            "leave_time": "2023-12-21T15:23:48Z",
+            "duration": 798,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16799744",
+            "name": "Infinix X669D",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:30Z",
+            "leave_time": "2023-12-21T15:27:14Z",
+            "duration": 1004,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16800768",
+            "name": "Laurent Muodum (B)",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:30Z",
+            "leave_time": "2023-12-21T16:31:34Z",
+            "duration": 4864,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16801792",
+            "name": "Ofunne Ikeyi (F)",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:30Z",
+            "leave_time": "2023-12-21T15:47:44Z",
+            "duration": 2234,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        },
+        {
+            "id": "",
+            "user_id": "16802816",
+            "name": "Chimeremnma Ojinta",
+            "user_email": "",
+            "join_time": "2023-12-21T15:10:31Z",
+            "leave_time": "2023-12-21T16:31:34Z",
+            "duration": 4863,
+            "attentiveness_score": "",
+            "failover": false,
+            "status": "in_meeting",
+            "customer_key": ""
+        }

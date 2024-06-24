@@ -1,0 +1,15 @@
+export { default as applicantController } from "./applicant.controller";
+export { default as authController } from "./auth.controller";
+export { profileController, internController, mentorController, coordinatorController } from "./users";
+export { default as taskController } from "./task.controller";
+export { default as taskSubmissionController } from "./task_submission.controller";
+export { default as announcementController } from "./announcement.controller";
+export { default as uploadController } from "./upload.controller";
+export { default as serverController } from "./server.controller";
+export { default as leaderBoardController } from "./leaderboard.controller";
+export { default as mentorsController } from "./mentorship.controller";
+export { default as groupController } from "./groups/task.group.controller";
+export { default as meetingController } from "./meeting.controller";
+export { default as meetingAttendanceController } from "./meeting_attendance.controller";
+export { default as zoomWebhookController } from "../controllers/zoom_webhook.controller";
+export { default as mentorshipGroupController } from "../controllers/groups/mentorship.group.controller";

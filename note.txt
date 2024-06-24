@@ -1,0 +1,102 @@
+WORKING FEATURES & ROUTES:
+[WEEK ONE: 16th October 2023 - 20th October]
+* Authentication
+i. pre-registration
+• setting applicants and users not to show up or login if deleted is true
+• saving applicants info to the database/ creating applicants [coordinator] ~ /api/v1/applicants/create
+• fetching all applicants [coordinator] ~ /api/v1/applicants - get all
+• fetching one applicant [coordinator] ~ /api/v1/applicants/:id - get one
+• disabling an applicant [coordinator] ~ /api/v1/applicants/disable/:id - disable one
+• enabling a disabled applicant [coordinator] ~ /api/v1/applicants/enable/:id - enable one
+• disabling all applicants by their year of application ~ /api/v1/applicants/disable/:year - patch
+
+ii. registration
+• signup for mentors and interns ~ /api/v1/auth/register
+• signup for coordinators ~ /api/v1/coordinators/create
+
+iii. post-registration
+• login for all users ~ /api/v1/auth/login
+• password reset
+• email verification
+
+* User profile management
+• editing user profile
+• avatar changing with cloudinary
+
+* Notification features
+• emailing users with nodemailer
+
+* announcements
+• to create announcement ~ /api/v1/announcements/    
+• to get one announcement ~ /api/v1/announcements/:id 
+• to edit one announcement ~ /api/v1/announcements/:id 
+• to delete one announcement ~ /api/v1/announcements/:id 
+• to view all announcements ~ /api/v1/announcements/    
+
+* Tasks
+• Create tasks (Facilitator)
+• Submit tasks (Intern)
+• Edit tasks (facilitator)
+• Approve tasks (coordinator)
+• Reject tasks (coordinator)
+•⁠ make disabling a task to disable all its submissions too in case of malpractice or something.
+
+* LeaderBoard
+•⁠ correct leaderboard to return null for tasks that weren’t done so front end can score them zero. 
+
+UPCOMING FEATURES:
+• Edit tasks (coordinator)
+• leaderboard
+• notifications
+• update README.md
+•⁠ assign mentor aka create mentorship group
+•⁠ change Mentor
+•⁠ disable Mentor
+•⁠ disable Intern
+•⁠ implement creating a task group
+•⁠ implement submitting a group task
+•⁠ implement Attendance Ft Zoom
+•⁠ implement strikes
+•⁠ implement Appraisals (leaderboard won’t update until it’s done unless tappi says otherwise)
+•⁠ implement bonuses
+•⁠ possibly implement leaderboard updating by track
+•⁠ possibly make leaderboard update irrespective of ungraded appraisals.
+•⁠ possibly just make leaderboard auto update itself and always render the updated version.
+
+FIXES:
+•⁠ fix bug with facilitator who created a task disabling it provided it hasn’t been approved by a coordinator.
+• applicants using an email already associated with an account
+• get validation custom error message to work
+• registration after the deadline(year or date)
+
+=> tomorrow is here
+- add group info to the mentor and add links field
+- remove mentors
+- add mentors
+* mentor, interns fields
+- create nested task groups
+* parent group will have: name, description, task_id, links field
+* nested group will have: members
+- make task id not required when nested group is being created
+- edit a parent group and make task group reusable (possibly)
+
+- Add activity logging
+- Make email template cleaner
+- Add rate limiter
+- Finish leaderboard update: catching attendance, appraisals, bonuses and strikes.
+Below 20% - did not attend - 0% attendance for the day 
+
+Below 40% Above 20% - did not complete - 50% attendance for the day 
+
+Above 40% - completed - 100% attendance for the day
+The cumulation of the attendance percentage for the day divided by the number of sessions will give the attendance score
+E.g 
+
+SOTU 1 - 100% 
+Q&A - 50% 
+SOTU 2 - 100% 
+
+Total - 250% 
+Number of classes - 3 
+
+Attendance score for the period - 250/3 = 83.3%
