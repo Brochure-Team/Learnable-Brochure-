@@ -11,5 +11,5 @@ export { default as mentorsController } from "./mentorship.controller";
 export { default as groupController } from "./groups/task.group.controller";
 export { default as meetingController } from "./meeting.controller";
 export { default as meetingAttendanceController } from "./meeting_attendance.controller";
-export { default as zoomWebhookController } from "../controllers/zoom_webhook.controller";
-export { default as mentorshipGroupController } from "../controllers/groups/mentorship.group.controller";
+export { default as zoomWebhookController } from "./zoom_webhook.controller";
+export { default as mentorshipGroupController } from "./groups/mentorship.group.controller";
